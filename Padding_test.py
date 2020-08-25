@@ -29,7 +29,7 @@ def gaussian(x, gamma, beta, alpha):
 x = (np.arange(201)-100)/10
 ccf = gaussian(x, 1, 0, 0.1)
 plt.plot(x, ccf, '.')
-plt.show()
+plt.title('signal')
 
 ft, power, phase, freq = FT(ccf, 0.1)
 plt.plot(np.array(ft).real, np.array(ft).imag, '.')
